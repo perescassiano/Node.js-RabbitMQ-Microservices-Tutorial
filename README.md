@@ -19,6 +19,11 @@
 - Node.js: servidor web
 - MongoDB: banco de dados
 - RabbitMQ: gerenciamento de filas e mensageria entre os microsserviços
+- Docker para executar o MongoDB e o RabbitMQ
+
+```docker run -d -p 27017:27017 --name mongodb mongo:latest```
+
+```docker run -p 5672:5672 rabbitmq```
 
 ## Arquitetura do projeto
 ![Services Arch](./arch.png)
